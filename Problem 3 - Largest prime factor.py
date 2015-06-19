@@ -6,7 +6,7 @@ def isPrime(num):
 		return True
 	else:
 		i = 2
-		while i < math.sqrt(num):
+		while i <= math.sqrt(num):
 			if num % i == 0:
 				return False
 			i += 1
