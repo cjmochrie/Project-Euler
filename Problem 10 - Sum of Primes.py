@@ -5,11 +5,14 @@ def isPrime(num):
 	if num < 4:
 		return True
 	else:
-		i = 2
-		while i <= math.sqrt(num):
-			if num % i == 0:
-				return False
-			i += 1
+		if num % 2 == 0:
+			return False
+		else:
+			i = 3
+			while i <= math.sqrt(num):
+				if num % i == 0:
+					return False
+				i += 2
 
 	return True
 
